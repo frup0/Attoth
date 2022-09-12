@@ -1,0 +1,1573 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Font/19148.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Script/PauseButton.gd" type="Script" id=2]
+[ext_resource path="res://Scene/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Sprite/Static Sprites/beton.png" type="Texture" id=4]
+[ext_resource path="res://Sprite/Static Sprites/flashlight.png" type="Texture" id=5]
+[ext_resource path="res://Sprite/Static Sprites/road.png" type="Texture" id=6]
+[ext_resource path="res://Sprite/Static Sprites/border.png" type="Texture" id=7]
+[ext_resource path="res://Scene/Camera2D.gd" type="Script" id=8]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 1 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 593, 10 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 10, 301 )
+
+[node name="GameOne" type="Node2D"]
+
+[node name="Betons" type="Sprite" parent="."]
+position = Vector2( -32, 544 )
+texture = ExtResource( 4 )
+
+[node name="Beton" type="Sprite" parent="Betons"]
+position = Vector2( 64, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton25" type="Sprite" parent="Betons"]
+position = Vector2( 0, 64 )
+texture = ExtResource( 4 )
+
+[node name="Betons2" type="Sprite" parent="Betons"]
+position = Vector2( 128, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton2" type="Sprite" parent="Betons"]
+position = Vector2( 192, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton3" type="Sprite" parent="Betons"]
+position = Vector2( 256, 0 )
+texture = ExtResource( 4 )
+
+[node name="Betons3" type="Sprite" parent="Betons"]
+position = Vector2( 320, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton4" type="Sprite" parent="Betons"]
+position = Vector2( 384, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton5" type="Sprite" parent="Betons"]
+position = Vector2( 448, 0 )
+texture = ExtResource( 4 )
+
+[node name="Betons4" type="Sprite" parent="Betons"]
+position = Vector2( 512, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton6" type="Sprite" parent="Betons"]
+position = Vector2( 576, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton7" type="Sprite" parent="Betons"]
+position = Vector2( 640, 0 )
+texture = ExtResource( 4 )
+
+[node name="Betons5" type="Sprite" parent="Betons"]
+position = Vector2( 704, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton8" type="Sprite" parent="Betons"]
+position = Vector2( 768, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton9" type="Sprite" parent="Betons"]
+position = Vector2( 832, 0 )
+texture = ExtResource( 4 )
+
+[node name="Betons6" type="Sprite" parent="Betons"]
+position = Vector2( 896, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton10" type="Sprite" parent="Betons"]
+position = Vector2( 960, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton11" type="Sprite" parent="Betons"]
+position = Vector2( 1024, 0 )
+texture = ExtResource( 4 )
+
+[node name="Betons7" type="Sprite" parent="Betons"]
+position = Vector2( 1088, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton12" type="Sprite" parent="Betons"]
+position = Vector2( 1152, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton13" type="Sprite" parent="Betons"]
+position = Vector2( 64, 64 )
+texture = ExtResource( 4 )
+
+[node name="Betons8" type="Sprite" parent="Betons"]
+position = Vector2( 128, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton14" type="Sprite" parent="Betons"]
+position = Vector2( 192, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton15" type="Sprite" parent="Betons"]
+position = Vector2( 256, 64 )
+texture = ExtResource( 4 )
+
+[node name="Betons9" type="Sprite" parent="Betons"]
+position = Vector2( 320, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton16" type="Sprite" parent="Betons"]
+position = Vector2( 384, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton17" type="Sprite" parent="Betons"]
+position = Vector2( 448, 64 )
+texture = ExtResource( 4 )
+
+[node name="Betons10" type="Sprite" parent="Betons"]
+position = Vector2( 512, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton18" type="Sprite" parent="Betons"]
+position = Vector2( 576, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton19" type="Sprite" parent="Betons"]
+position = Vector2( 640, 64 )
+texture = ExtResource( 4 )
+
+[node name="Betons11" type="Sprite" parent="Betons"]
+position = Vector2( 704, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton20" type="Sprite" parent="Betons"]
+position = Vector2( 768, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton21" type="Sprite" parent="Betons"]
+position = Vector2( 832, 64 )
+texture = ExtResource( 4 )
+
+[node name="Betons12" type="Sprite" parent="Betons"]
+position = Vector2( 896, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton22" type="Sprite" parent="Betons"]
+position = Vector2( 960, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton23" type="Sprite" parent="Betons"]
+position = Vector2( 1024, 64 )
+texture = ExtResource( 4 )
+
+[node name="Betons13" type="Sprite" parent="Betons"]
+position = Vector2( 1088, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton24" type="Sprite" parent="Betons"]
+position = Vector2( 1152, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton26" type="Sprite" parent="Betons"]
+position = Vector2( 64, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton27" type="Sprite" parent="Betons"]
+position = Vector2( 0, -64 )
+texture = ExtResource( 4 )
+
+[node name="Betons14" type="Sprite" parent="Betons"]
+position = Vector2( 128, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton28" type="Sprite" parent="Betons"]
+position = Vector2( 192, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton29" type="Sprite" parent="Betons"]
+position = Vector2( 256, -128 )
+texture = ExtResource( 4 )
+
+[node name="Betons15" type="Sprite" parent="Betons"]
+position = Vector2( 320, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton30" type="Sprite" parent="Betons"]
+position = Vector2( 384, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton31" type="Sprite" parent="Betons"]
+position = Vector2( 448, -128 )
+texture = ExtResource( 4 )
+
+[node name="Betons16" type="Sprite" parent="Betons"]
+position = Vector2( 512, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton32" type="Sprite" parent="Betons"]
+position = Vector2( 576, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton33" type="Sprite" parent="Betons"]
+position = Vector2( 640, -128 )
+texture = ExtResource( 4 )
+
+[node name="Betons17" type="Sprite" parent="Betons"]
+position = Vector2( 704, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton34" type="Sprite" parent="Betons"]
+position = Vector2( 768, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton35" type="Sprite" parent="Betons"]
+position = Vector2( 832, -128 )
+texture = ExtResource( 4 )
+
+[node name="Betons18" type="Sprite" parent="Betons"]
+position = Vector2( 896, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton36" type="Sprite" parent="Betons"]
+position = Vector2( 960, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton37" type="Sprite" parent="Betons"]
+position = Vector2( 1024, -128 )
+texture = ExtResource( 4 )
+
+[node name="Betons19" type="Sprite" parent="Betons"]
+position = Vector2( 1088, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton38" type="Sprite" parent="Betons"]
+position = Vector2( 1152, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton39" type="Sprite" parent="Betons"]
+position = Vector2( 64, -64 )
+texture = ExtResource( 4 )
+
+[node name="Betons20" type="Sprite" parent="Betons"]
+position = Vector2( 128, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton40" type="Sprite" parent="Betons"]
+position = Vector2( 192, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton41" type="Sprite" parent="Betons"]
+position = Vector2( 256, -64 )
+texture = ExtResource( 4 )
+
+[node name="Betons21" type="Sprite" parent="Betons"]
+position = Vector2( 320, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton42" type="Sprite" parent="Betons"]
+position = Vector2( 384, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton43" type="Sprite" parent="Betons"]
+position = Vector2( 448, -64 )
+texture = ExtResource( 4 )
+
+[node name="Betons22" type="Sprite" parent="Betons"]
+position = Vector2( 512, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton44" type="Sprite" parent="Betons"]
+position = Vector2( 576, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton45" type="Sprite" parent="Betons"]
+position = Vector2( 640, -64 )
+texture = ExtResource( 4 )
+
+[node name="Betons23" type="Sprite" parent="Betons"]
+position = Vector2( 704, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton46" type="Sprite" parent="Betons"]
+position = Vector2( 768, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton47" type="Sprite" parent="Betons"]
+position = Vector2( 832, -64 )
+texture = ExtResource( 4 )
+
+[node name="Betons24" type="Sprite" parent="Betons"]
+position = Vector2( 896, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton48" type="Sprite" parent="Betons"]
+position = Vector2( 960, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton49" type="Sprite" parent="Betons"]
+position = Vector2( 1024, -64 )
+texture = ExtResource( 4 )
+
+[node name="Betons25" type="Sprite" parent="Betons"]
+position = Vector2( 1088, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton50" type="Sprite" parent="Betons"]
+position = Vector2( 1152, -64 )
+texture = ExtResource( 4 )
+
+[node name="Betons26" type="Sprite" parent="Betons"]
+position = Vector2( 0, -128 )
+texture = ExtResource( 4 )
+
+[node name="Betons27" type="Sprite" parent="Betons"]
+position = Vector2( 0, -256 )
+texture = ExtResource( 4 )
+
+[node name="Beton" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 64, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton25" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 0, 64 )
+texture = ExtResource( 4 )
+
+[node name="Betons2" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 128, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton2" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 192, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton3" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 256, 0 )
+texture = ExtResource( 4 )
+
+[node name="Betons3" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 320, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton4" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 384, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton5" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 448, 0 )
+texture = ExtResource( 4 )
+
+[node name="Betons4" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 512, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton6" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 576, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton7" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 640, 0 )
+texture = ExtResource( 4 )
+
+[node name="Betons5" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 704, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton8" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 768, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton9" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 832, 0 )
+texture = ExtResource( 4 )
+
+[node name="Betons6" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 896, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton10" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 960, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton11" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 1024, 0 )
+texture = ExtResource( 4 )
+
+[node name="Betons7" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 1088, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton12" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 1152, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton13" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 64, 64 )
+texture = ExtResource( 4 )
+
+[node name="Betons8" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 128, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton14" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 192, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton15" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 256, 64 )
+texture = ExtResource( 4 )
+
+[node name="Betons9" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 320, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton16" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 384, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton17" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 448, 64 )
+texture = ExtResource( 4 )
+
+[node name="Betons10" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 512, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton18" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 576, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton19" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 640, 64 )
+texture = ExtResource( 4 )
+
+[node name="Betons11" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 704, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton20" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 768, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton21" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 832, 64 )
+texture = ExtResource( 4 )
+
+[node name="Betons12" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 896, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton22" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 960, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton23" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 1024, 64 )
+texture = ExtResource( 4 )
+
+[node name="Betons13" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 1088, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton24" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 1152, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton26" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 64, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton27" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 0, -64 )
+texture = ExtResource( 4 )
+
+[node name="Betons14" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 128, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton28" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 192, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton29" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 256, -128 )
+texture = ExtResource( 4 )
+
+[node name="Betons15" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 320, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton30" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 384, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton31" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 448, -128 )
+texture = ExtResource( 4 )
+
+[node name="Betons16" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 512, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton32" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 576, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton33" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 640, -128 )
+texture = ExtResource( 4 )
+
+[node name="Betons17" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 704, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton34" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 768, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton35" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 832, -128 )
+texture = ExtResource( 4 )
+
+[node name="Betons18" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 896, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton36" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 960, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton37" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 1024, -128 )
+texture = ExtResource( 4 )
+
+[node name="Betons19" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 1088, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton38" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 1152, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton39" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 64, -64 )
+texture = ExtResource( 4 )
+
+[node name="Betons20" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 128, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton40" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 192, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton41" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 256, -64 )
+texture = ExtResource( 4 )
+
+[node name="Betons21" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 320, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton42" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 384, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton43" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 448, -64 )
+texture = ExtResource( 4 )
+
+[node name="Betons22" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 512, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton44" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 576, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton45" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 640, -64 )
+texture = ExtResource( 4 )
+
+[node name="Betons23" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 704, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton46" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 768, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton47" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 832, -64 )
+texture = ExtResource( 4 )
+
+[node name="Betons24" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 896, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton48" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 960, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton49" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 1024, -64 )
+texture = ExtResource( 4 )
+
+[node name="Betons25" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 1088, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton50" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 1152, -64 )
+texture = ExtResource( 4 )
+
+[node name="Betons26" type="Sprite" parent="Betons/Betons27"]
+position = Vector2( 0, -128 )
+texture = ExtResource( 4 )
+
+[node name="Betons3" type="Sprite" parent="Betons/Betons27/Betons26"]
+position = Vector2( 0, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 64, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton25" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 0, 64 )
+texture = ExtResource( 4 )
+
+[node name="Betons2" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 128, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton2" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 192, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton3" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 256, 0 )
+texture = ExtResource( 4 )
+
+[node name="Betons3" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 320, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton4" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 384, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton5" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 448, 0 )
+texture = ExtResource( 4 )
+
+[node name="Betons4" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 512, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton6" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 576, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton7" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 640, 0 )
+texture = ExtResource( 4 )
+
+[node name="Betons5" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 704, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton8" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 768, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton9" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 832, 0 )
+texture = ExtResource( 4 )
+
+[node name="Betons6" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 896, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton10" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 960, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton11" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 1024, 0 )
+texture = ExtResource( 4 )
+
+[node name="Betons7" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 1088, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton12" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 1152, 0 )
+texture = ExtResource( 4 )
+
+[node name="Beton13" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 64, 64 )
+texture = ExtResource( 4 )
+
+[node name="Betons8" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 128, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton14" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 192, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton15" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 256, 64 )
+texture = ExtResource( 4 )
+
+[node name="Betons9" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 320, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton16" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 384, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton17" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 448, 64 )
+texture = ExtResource( 4 )
+
+[node name="Betons10" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 512, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton18" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 576, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton19" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 640, 64 )
+texture = ExtResource( 4 )
+
+[node name="Betons11" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 704, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton20" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 768, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton21" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 832, 64 )
+texture = ExtResource( 4 )
+
+[node name="Betons12" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 896, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton22" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 960, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton23" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 1024, 64 )
+texture = ExtResource( 4 )
+
+[node name="Betons13" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 1088, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton24" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 1152, 64 )
+texture = ExtResource( 4 )
+
+[node name="Beton26" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 64, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton27" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 0, -64 )
+texture = ExtResource( 4 )
+
+[node name="Betons14" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 128, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton28" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 192, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton29" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 256, -128 )
+texture = ExtResource( 4 )
+
+[node name="Betons15" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 320, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton30" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 384, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton31" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 448, -128 )
+texture = ExtResource( 4 )
+
+[node name="Betons16" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 512, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton32" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 576, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton33" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 640, -128 )
+texture = ExtResource( 4 )
+
+[node name="Betons17" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 704, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton34" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 768, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton35" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 832, -128 )
+texture = ExtResource( 4 )
+
+[node name="Betons18" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 896, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton36" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 960, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton37" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 1024, -128 )
+texture = ExtResource( 4 )
+
+[node name="Betons19" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 1088, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton38" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 1152, -128 )
+texture = ExtResource( 4 )
+
+[node name="Beton39" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 64, -64 )
+texture = ExtResource( 4 )
+
+[node name="Betons20" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 128, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton40" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 192, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton41" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 256, -64 )
+texture = ExtResource( 4 )
+
+[node name="Betons21" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 320, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton42" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 384, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton43" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 448, -64 )
+texture = ExtResource( 4 )
+
+[node name="Betons22" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 512, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton44" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 576, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton45" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 640, -64 )
+texture = ExtResource( 4 )
+
+[node name="Betons23" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 704, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton46" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 768, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton47" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 832, -64 )
+texture = ExtResource( 4 )
+
+[node name="Betons24" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 896, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton48" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 960, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton49" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 1024, -64 )
+texture = ExtResource( 4 )
+
+[node name="Betons25" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 1088, -64 )
+texture = ExtResource( 4 )
+
+[node name="Beton50" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 1152, -64 )
+texture = ExtResource( 4 )
+
+[node name="Betons26" type="Sprite" parent="Betons/Betons27/Betons26/Betons3"]
+position = Vector2( 0, -128 )
+texture = ExtResource( 4 )
+
+[node name="Borders" type="Sprite" parent="."]
+position = Vector2( -32, 272 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border6" type="Sprite" parent="Borders"]
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border" type="Sprite" parent="Borders"]
+position = Vector2( 0, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border2" type="Sprite" parent="Borders"]
+position = Vector2( 0, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border7" type="Sprite" parent="Borders"]
+position = Vector2( 64, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border3" type="Sprite" parent="Borders"]
+position = Vector2( 64, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border8" type="Sprite" parent="Borders"]
+position = Vector2( 128, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border4" type="Sprite" parent="Borders"]
+position = Vector2( 128, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border9" type="Sprite" parent="Borders"]
+position = Vector2( 192, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border5" type="Sprite" parent="Borders"]
+position = Vector2( 192, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border10" type="Sprite" parent="Borders"]
+position = Vector2( 256, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border11" type="Sprite" parent="Borders"]
+position = Vector2( 256, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border12" type="Sprite" parent="Borders"]
+position = Vector2( 320, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border13" type="Sprite" parent="Borders"]
+position = Vector2( 320, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border14" type="Sprite" parent="Borders"]
+position = Vector2( 384, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border15" type="Sprite" parent="Borders"]
+position = Vector2( 384, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border16" type="Sprite" parent="Borders"]
+position = Vector2( 448, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border17" type="Sprite" parent="Borders"]
+position = Vector2( 448, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border18" type="Sprite" parent="Borders"]
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border19" type="Sprite" parent="Borders"]
+position = Vector2( 0, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border20" type="Sprite" parent="Borders"]
+position = Vector2( 64, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border21" type="Sprite" parent="Borders"]
+position = Vector2( 64, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border22" type="Sprite" parent="Borders"]
+position = Vector2( 128, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border23" type="Sprite" parent="Borders"]
+position = Vector2( 128, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border24" type="Sprite" parent="Borders"]
+position = Vector2( 192, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border25" type="Sprite" parent="Borders"]
+position = Vector2( 192, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border26" type="Sprite" parent="Borders"]
+position = Vector2( 256, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border27" type="Sprite" parent="Borders"]
+position = Vector2( 256, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border28" type="Sprite" parent="Borders"]
+position = Vector2( 320, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border29" type="Sprite" parent="Borders"]
+position = Vector2( 320, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border30" type="Sprite" parent="Borders"]
+position = Vector2( 384, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border31" type="Sprite" parent="Borders"]
+position = Vector2( 384, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border32" type="Sprite" parent="Borders"]
+position = Vector2( 448, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border33" type="Sprite" parent="Borders"]
+position = Vector2( 448, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border34" type="Sprite" parent="Borders"]
+position = Vector2( 512, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border35" type="Sprite" parent="Borders"]
+position = Vector2( 512, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border36" type="Sprite" parent="Borders"]
+position = Vector2( 576, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border37" type="Sprite" parent="Borders"]
+position = Vector2( 576, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border38" type="Sprite" parent="Borders"]
+position = Vector2( 640, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border39" type="Sprite" parent="Borders"]
+position = Vector2( 640, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border40" type="Sprite" parent="Borders"]
+position = Vector2( 704, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border41" type="Sprite" parent="Borders"]
+position = Vector2( 704, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border42" type="Sprite" parent="Borders"]
+position = Vector2( 768, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border43" type="Sprite" parent="Borders"]
+position = Vector2( 768, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border44" type="Sprite" parent="Borders"]
+position = Vector2( 832, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border45" type="Sprite" parent="Borders"]
+position = Vector2( 832, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border46" type="Sprite" parent="Borders"]
+position = Vector2( 896, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border47" type="Sprite" parent="Borders"]
+position = Vector2( 896, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border48" type="Sprite" parent="Borders"]
+position = Vector2( 960, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border49" type="Sprite" parent="Borders"]
+position = Vector2( 960, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border50" type="Sprite" parent="Borders"]
+position = Vector2( 512, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border51" type="Sprite" parent="Borders"]
+position = Vector2( 512, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border52" type="Sprite" parent="Borders"]
+position = Vector2( 576, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border53" type="Sprite" parent="Borders"]
+position = Vector2( 576, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border54" type="Sprite" parent="Borders"]
+position = Vector2( 640, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border55" type="Sprite" parent="Borders"]
+position = Vector2( 640, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border56" type="Sprite" parent="Borders"]
+position = Vector2( 704, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border57" type="Sprite" parent="Borders"]
+position = Vector2( 704, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border58" type="Sprite" parent="Borders"]
+position = Vector2( 768, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border59" type="Sprite" parent="Borders"]
+position = Vector2( 768, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border60" type="Sprite" parent="Borders"]
+position = Vector2( 832, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border61" type="Sprite" parent="Borders"]
+position = Vector2( 832, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border62" type="Sprite" parent="Borders"]
+position = Vector2( 896, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border63" type="Sprite" parent="Borders"]
+position = Vector2( 896, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border64" type="Sprite" parent="Borders"]
+position = Vector2( 960, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border65" type="Sprite" parent="Borders"]
+position = Vector2( 960, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border66" type="Sprite" parent="Borders"]
+position = Vector2( 704, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border67" type="Sprite" parent="Borders"]
+position = Vector2( 704, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border68" type="Sprite" parent="Borders"]
+position = Vector2( 768, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border69" type="Sprite" parent="Borders"]
+position = Vector2( 768, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border70" type="Sprite" parent="Borders"]
+position = Vector2( 832, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border71" type="Sprite" parent="Borders"]
+position = Vector2( 832, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border72" type="Sprite" parent="Borders"]
+position = Vector2( 896, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border73" type="Sprite" parent="Borders"]
+position = Vector2( 896, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border74" type="Sprite" parent="Borders"]
+position = Vector2( 960, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border75" type="Sprite" parent="Borders"]
+position = Vector2( 960, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border76" type="Sprite" parent="Borders"]
+position = Vector2( 1024, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border77" type="Sprite" parent="Borders"]
+position = Vector2( 1024, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border78" type="Sprite" parent="Borders"]
+position = Vector2( 1088, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border79" type="Sprite" parent="Borders"]
+position = Vector2( 1088, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border80" type="Sprite" parent="Borders"]
+position = Vector2( 1152, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border81" type="Sprite" parent="Borders"]
+position = Vector2( 1152, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border82" type="Sprite" parent="Borders"]
+position = Vector2( 704, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border83" type="Sprite" parent="Borders"]
+position = Vector2( 704, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border84" type="Sprite" parent="Borders"]
+position = Vector2( 768, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border85" type="Sprite" parent="Borders"]
+position = Vector2( 768, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border86" type="Sprite" parent="Borders"]
+position = Vector2( 832, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border87" type="Sprite" parent="Borders"]
+position = Vector2( 832, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border88" type="Sprite" parent="Borders"]
+position = Vector2( 896, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border89" type="Sprite" parent="Borders"]
+position = Vector2( 896, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border90" type="Sprite" parent="Borders"]
+position = Vector2( 960, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border91" type="Sprite" parent="Borders"]
+position = Vector2( 960, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border92" type="Sprite" parent="Borders"]
+position = Vector2( 1024, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border93" type="Sprite" parent="Borders"]
+position = Vector2( 1024, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border94" type="Sprite" parent="Borders"]
+position = Vector2( 1088, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border95" type="Sprite" parent="Borders"]
+position = Vector2( 1088, 128 )
+texture = ExtResource( 7 )
+
+[node name="Border96" type="Sprite" parent="Borders"]
+position = Vector2( 1152, 0 )
+texture = ExtResource( 7 )
+flip_v = true
+
+[node name="Border97" type="Sprite" parent="Borders"]
+position = Vector2( 1152, 128 )
+texture = ExtResource( 7 )
+
+[node name="Road" type="Sprite" parent="."]
+position = Vector2( -32, 336 )
+texture = ExtResource( 6 )
+
+[node name="Road" type="Sprite" parent="Road"]
+position = Vector2( 64, 0 )
+texture = ExtResource( 6 )
+
+[node name="Road2" type="Sprite" parent="Road"]
+position = Vector2( 128, 0 )
+texture = ExtResource( 6 )
+
+[node name="Road3" type="Sprite" parent="Road"]
+position = Vector2( 192, 0 )
+texture = ExtResource( 6 )
+
+[node name="Road4" type="Sprite" parent="Road"]
+position = Vector2( 256, 0 )
+texture = ExtResource( 6 )
+
+[node name="Road5" type="Sprite" parent="Road"]
+position = Vector2( 320, 0 )
+texture = ExtResource( 6 )
+
+[node name="Road6" type="Sprite" parent="Road"]
+position = Vector2( 384, 0 )
+texture = ExtResource( 6 )
+
+[node name="Road7" type="Sprite" parent="Road"]
+position = Vector2( 448, 0 )
+texture = ExtResource( 6 )
+
+[node name="Road8" type="Sprite" parent="Road"]
+position = Vector2( 512, 0 )
+texture = ExtResource( 6 )
+
+[node name="Road9" type="Sprite" parent="Road"]
+position = Vector2( 576, 0 )
+texture = ExtResource( 6 )
+
+[node name="Road10" type="Sprite" parent="Road"]
+position = Vector2( 640, 0 )
+texture = ExtResource( 6 )
+
+[node name="Road11" type="Sprite" parent="Road"]
+position = Vector2( 704, 0 )
+texture = ExtResource( 6 )
+
+[node name="Road12" type="Sprite" parent="Road"]
+position = Vector2( 768, 0 )
+texture = ExtResource( 6 )
+
+[node name="Road13" type="Sprite" parent="Road"]
+position = Vector2( 832, 0 )
+texture = ExtResource( 6 )
+
+[node name="Road14" type="Sprite" parent="Road"]
+position = Vector2( 896, 0 )
+texture = ExtResource( 6 )
+
+[node name="Road15" type="Sprite" parent="Road"]
+position = Vector2( 960, 0 )
+texture = ExtResource( 6 )
+
+[node name="Road16" type="Sprite" parent="Road"]
+position = Vector2( 1024, 0 )
+texture = ExtResource( 6 )
+
+[node name="Road17" type="Sprite" parent="Road"]
+position = Vector2( 1088, 0 )
+texture = ExtResource( 6 )
+
+[node name="Road18" type="Sprite" parent="Road"]
+position = Vector2( 1152, 0 )
+texture = ExtResource( 6 )
+
+[node name="FlashlightsDown" type="Sprite" parent="."]
+position = Vector2( 544, 256 )
+texture = ExtResource( 5 )
+
+[node name="Flashlight2" type="Sprite" parent="FlashlightsDown"]
+position = Vector2( -128, 0 )
+texture = ExtResource( 5 )
+
+[node name="Flashlight5" type="Sprite" parent="FlashlightsDown"]
+position = Vector2( 128, 0 )
+texture = ExtResource( 5 )
+
+[node name="Flashlights2" type="Sprite" parent="FlashlightsDown"]
+position = Vector2( 384, 0 )
+texture = ExtResource( 5 )
+
+[node name="Flashlight7" type="Sprite" parent="FlashlightsDown"]
+position = Vector2( 256, 0 )
+texture = ExtResource( 5 )
+
+[node name="Flashlight10" type="Sprite" parent="FlashlightsDown"]
+position = Vector2( 512, 0 )
+texture = ExtResource( 5 )
+
+[node name="Flashlights3" type="Sprite" parent="FlashlightsDown"]
+position = Vector2( -384, 0 )
+texture = ExtResource( 5 )
+
+[node name="Flashlight12" type="Sprite" parent="FlashlightsDown"]
+position = Vector2( -512, 0 )
+texture = ExtResource( 5 )
+
+[node name="Flashlight15" type="Sprite" parent="FlashlightsDown"]
+position = Vector2( -256, 0 )
+texture = ExtResource( 5 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 480, 320 )
+
+[node name="Pause" type="Button" parent="Player"]
+margin_left = 168.0
+margin_top = 72.0
+margin_right = 246.0
+margin_bottom = 111.0
+custom_colors/font_color = Color( 0.596078, 0.596078, 0.596078, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Пауза"
+flat = true
+script = ExtResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2( 8, -24 )
+current = true
+zoom = Vector2( 0.5, 0.5 )
+script = ExtResource( 8 )
+
+[node name="Tween" type="Tween" parent="Player/Camera2D"]
+
+[node name="FlashlightsUp" type="Sprite" parent="."]
+position = Vector2( 480, 384 )
+texture = ExtResource( 5 )
+flip_h = true
+
+[node name="Flashlight3" type="Sprite" parent="FlashlightsUp"]
+position = Vector2( -128, 0 )
+texture = ExtResource( 5 )
+flip_h = true
+
+[node name="Flashlight4" type="Sprite" parent="FlashlightsUp"]
+position = Vector2( 128, 0 )
+texture = ExtResource( 5 )
+flip_h = true
+
+[node name="Flashlight6" type="Sprite" parent="FlashlightsUp"]
+position = Vector2( 384, 0 )
+texture = ExtResource( 5 )
+flip_h = true
+
+[node name="Flashlight8" type="Sprite" parent="FlashlightsUp"]
+position = Vector2( 256, 0 )
+texture = ExtResource( 5 )
+flip_h = true
+
+[node name="Flashlight9" type="Sprite" parent="FlashlightsUp"]
+position = Vector2( 512, 0 )
+texture = ExtResource( 5 )
+flip_h = true
+
+[node name="Flashlight11" type="Sprite" parent="FlashlightsUp"]
+position = Vector2( -384, 0 )
+texture = ExtResource( 5 )
+flip_h = true
+
+[node name="Flashlight13" type="Sprite" parent="FlashlightsUp"]
+position = Vector2( -512, 0 )
+texture = ExtResource( 5 )
+flip_h = true
+
+[node name="Flashlight14" type="Sprite" parent="FlashlightsUp"]
+position = Vector2( -256, 0 )
+texture = ExtResource( 5 )
+flip_h = true
+
+[node name="Colisions" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Colisions"]
+position = Vector2( 583, -1 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Colisions"]
+position = Vector2( 583, 583 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Colisions"]
+position = Vector2( 0, 291 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Colisions"]
+position = Vector2( 1144, 296 )
+shape = SubResource( 3 )
+
+[connection signal="pressed" from="Player/Pause" to="Player/Pause" method="_on_Pause_pressed"]

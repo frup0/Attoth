@@ -1,0 +1,83 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Font/19148.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scene/Autors.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 80
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 35
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 1 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Logo" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_top = 32.0
+margin_right = 1024.0
+margin_bottom = 601.0
+custom_fonts/font = SubResource( 1 )
+text = "авторы"
+align = 1
+
+[node name="Play" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 400.0
+margin_top = 520.0
+margin_right = 627.0
+margin_bottom = 564.0
+custom_colors/font_color = Color( 0.596078, 0.596078, 0.596078, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "обратно в игру"
+flat = true
+
+[node name="Label" type="Label" parent="."]
+margin_top = 16.0
+margin_right = 1024.0
+margin_bottom = 616.0
+custom_fonts/font = SubResource( 3 )
+text = "разработчики (програмист):
+rodsa (писал код)
+arseka (помогал писать код, который не смог написать rodsa)
+
+дизайнер, художник:
+rodsa
+
+сценарист:
+rodsa
+
+Композитор(отвечающий за фоновую музыку):
+Neyzer
+
+тестировщики:
+arseka
+rodsa"
+align = 1
+valign = 1
+
+[node name="Label" type="Label" parent="Label"]
+margin_top = 544.0
+margin_right = 264.0
+margin_bottom = 583.0
+custom_fonts/font = SubResource( 4 )
+text = "соц сети:
+вк RDG: vk.com/rodsagd"
+
+[connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
